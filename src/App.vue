@@ -1,27 +1,34 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+  <main class="">
+    <div class="grid remover-espaco">
+      <div class="col-2 remover-espaco">
+        <SideBar/>
+      </div>
+      <div class="col">2</div>
+      
+    </div>
+  </main>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
-import HelloWorld from './components/HelloWorld.vue';
-
+import { defineComponent } from "vue";
+import SideBar from "./components/SideBar.vue";
 export default defineComponent({
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
+    SideBar
   }
 });
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+.remover-espaco{
+  margin: 0 !important;
+  padding: 0 !important;
+  }
+body{
+  margin: 0;
+  padding: 0;
+  
 }
 </style>
